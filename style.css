@@ -5,13 +5,32 @@
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(0, 102, 204);
+}
+
+a::after {
+  height: 18px;
+  content: url("./res/arrow.svg");
+}
+
 body {
   font-family: "San Francisco", "Helvetica", "Arial", sans-serif;
-  font-size: 12px;
-  font-weight: lighter;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 header {
+  position: relative;
+  height: 100%;
+  height: 46px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(2rem);
   -webkit-backdrop-filter: blur(2rem);
@@ -20,11 +39,74 @@ header {
 
 ul {
   display: flex;
+  font-size: 12px;
   flex-direction: row;
   width: 1050px;
   margin: 0px auto;
 }
 
 li {
-  margin: 16px;
+  opacity: 0.8;
+  padding: 16px;
+  transition: opacity 0.5s ease;
+}
+
+li:hover {
+  opacity: 1;
+}
+
+li .icon {
+  padding: 8px;
+}
+
+.notify-banner {
+  background-color: #fbfbfb;
+  padding: 1rem;
+  display: grid;
+  place-content: center;
+}
+
+.wide-card {
+  height: 592px;
+  background-color: #f3f3f3;
+  margin-bottom: 1rem;
+  padding: 3rem;
+  text-align: center;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.wide-card h1 {
+  letter-spacing: -0.1rem;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 56px;
+  font-weight: 500;
+}
+.wide-card h2 {
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+.wide-card a {
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.iphone-13-pro {
+  background-image: url("./res/iphone13pro.png");
+}
+.iphone-13 {
+  color: white;
+  background-image: url("./res/iphone13.png");
+}
+
+.iphone-13 h2 {
+  color: rgb(254, 194, 235);
+}
+.macbook-pro {
+  background-image: url("./res/macbookpro.png");
 }
