@@ -17,7 +17,8 @@ a::after {
 
 body {
   font-family: "San Francisco", "Helvetica", "Arial", sans-serif;
-  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
 }
@@ -35,13 +36,14 @@ nav {
   backdrop-filter: blur(2rem);
   -webkit-backdrop-filter: blur(2rem);
   color: white;
+  display: grid;
+  place-content: center;
 }
 
 ul {
   display: flex;
   font-size: 12px;
   flex-direction: row;
-  width: 1050px;
   margin: 0px auto;
 }
 
