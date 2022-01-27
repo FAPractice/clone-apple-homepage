@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  font-family: "San Francisco", "Helvetica", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  width: 1050px;
+  margin: 0px auto;
+}
+
+li {
+  margin: 16px;
+}
