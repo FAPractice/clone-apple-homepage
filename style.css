@@ -3,11 +3,21 @@
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
+  --accent-color: #0066ff;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 body {
   font-family: "San Francisco", "Helvetica", "Arial", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: lighter;
 }
 
@@ -16,15 +26,27 @@ header {
   backdrop-filter: blur(2rem);
   -webkit-backdrop-filter: blur(2rem);
   color: white;
+  font-size: 12px;
+}
+
+nav {
+  display: flex;
+  place-content: center;
 }
 
 ul {
   display: flex;
   flex-direction: row;
-  width: 1050px;
   margin: 0px auto;
 }
 
 li {
   margin: 16px;
+}
+
+.message-banner {
+  background: #fbfbfb;
+  display: flex;
+  place-content: center;
+  padding: 14px;
 }
