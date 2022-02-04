@@ -61,6 +61,22 @@ li .icon {
   padding: 8px;
 }
 
+@media screen and (max-width: 910px) {
+  ul {
+    width: 100vw;
+    justify-content: space-between;
+  }
+  .hidden_mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wide-card {
+    height: 1080px;
+  }
+}
+
 .notify-banner {
   background-color: #fbfbfb;
   padding: 1rem;
