@@ -142,26 +142,6 @@ li.icon {
   padding: 1rem;
 }
 
-/* Mobile Size */
-@media screen and (max-width: 600px) {
-  .wide-card {
-    height: 520px;
-  }
-  
-  .wide-card h1 {
-    font-weight: 400;
-    font-size: 32px;
-  }
-
-  .wide-card h2 {
-    font-size: 18px;
-  }
-
-  .wide-card a {
-    font-size: 16px;
-  }
-}
-
 .iphone-13-pro {
   background-image: url("./res/iphone13pro.png");
 }
@@ -175,6 +155,60 @@ li.icon {
 }
 .macbook-pro {
   background-image: url("./res/macbookpro.png");
+}
+
+.airpods {
+  background-image: url("./res/airpods.png");
+}
+
+.feb-14 {
+  background-image: url("./res/14feb.png");
+  color: rgb(96, 45, 98);
+}
+
+.feb-14 h2 {
+  padding: 0.5rem;
+}
+
+.feb-14 h1 {
+  padding-bottom: 1rem;
+  max-width: 50%;
+  margin: 0px auto;
+}
+
+.split-desktop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.split-desktop .wide-card {
+  height: 520px;
+}
+
+.split-desktop .wide-card h1 {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.split-desktop .wide-card h1 img {
+  height: 40px;
+}
+
+.split-desktop .wide-card h2 {
+  font-size: 18px;
+}
+
+.split-desktop .wide-card a {
+  font-size: 16px;
+}
+
+.apple_watch {
+  background-image: url("./res/applewatch.png");
+}
+
+.ipad-mini {
+  background-image: url("./res/ipadmini.png");
 }
 
 .footer {
@@ -192,10 +226,10 @@ li.icon {
 }
 
 hr {
-  padding-top: 0.5rem;
-  margin-top: 0.5rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
   border: none;
-  border-top: 1px solid rgba(110, 110, 115, 0.6);
+  border-top: 1px solid rgba(110, 110, 115, 0.5);
 }
 
 footer .flex-bottom {
@@ -214,7 +248,7 @@ footer a::after {
   content: none;
 }
 
-a .blue-a {
+a.blue-a {
   color: var(--accent-color);
 }
 
@@ -228,4 +262,65 @@ a .blue-a {
 
 .flex-bottom .links a::after {
   content: " | ";
+}
+
+.bottom-card-content {
+  display: grid;
+  align-content: end;
+}
+
+.bottom-card-content div {
+  height: min-content;
+}
+/* Mobile Size */
+@media screen and (max-width: 600px) {
+  .notify-banner {
+    padding: 1rem;
+  }
+
+  .wide-card {
+    height: 520px;
+  }
+
+  .wide-card h1 {
+    font-weight: 400;
+    font-size: 32px;
+  }
+
+  .wide-card h2 {
+    font-size: 18px;
+  }
+
+  .wide-card a {
+    font-size: 16px;
+  }
+
+  .footer {
+    padding: 1rem;
+  }
+
+  .fine-print {
+    padding: 0rem;
+  }
+
+  footer .flex-bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0px;
+  }
+
+  .country {
+    padding: 0px 1rem 0px 0px;
+    text-align: start;
+  }
+
+  .flex-bottom .links {
+    padding: 0.5rem 0px 1rem 0px;
+    text-align: start;
+  }
+
+  .split-desktop {
+    display: flex;
+    flex-direction: column;
+  }
 }
