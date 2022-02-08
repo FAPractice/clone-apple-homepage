@@ -9,27 +9,63 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
     <title>Apple</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li class="icon hidden_desktop menu"></li>
-          <li><i class="scale fa fa-apple" aria-hidden="true"></i></li>
-          <li class="hidden_mobile">Store</li>
-          <li class="hidden_mobile">Mac</li>
-          <li class="hidden_mobile">iPad</li>
-          <li class="hidden_mobile">iPhone</li>
-          <li class="hidden_mobile">Watch</li>
-          <li class="hidden_mobile">AirPods</li>
-          <li class="hidden_mobile">TV & Home</li>
-          <li class="hidden_mobile">Only on Apple</li>
-          <li class="hidden_mobile">Accessories</li>
-          <li class="hidden_mobile">Support</li>
-          <li class="icon hidden_mobile search"></li>
-          <li class="icon bag"></li>
-        </ul>
+      <nav class="" id="nav">
+        <div class="desktop-nav-center">
+          <ul class="desktop_nav">
+            <li class="icon hidden_desktop menu" id="menu-button"></li>
+            <li><i class="scale fa fa-apple" aria-hidden="true"></i></li>
+            <li class="hidden_mobile">Store</li>
+            <li class="hidden_mobile">Mac</li>
+            <li class="hidden_mobile">iPad</li>
+            <li class="hidden_mobile">iPhone</li>
+            <li class="hidden_mobile">Watch</li>
+            <li class="hidden_mobile">AirPods</li>
+            <li class="hidden_mobile">TV & Home</li>
+            <li class="hidden_mobile">Only on Apple</li>
+            <li class="hidden_mobile">Accessories</li>
+            <li class="hidden_mobile">Support</li>
+            <li class="icon hidden_mobile search"></li>
+            <li class="icon bag"></li>
+          </ul>
+        </div>
+        <div
+          class="nav_content hidden_desktop"
+          id="hidden-nav-content"
+          style="display: none"
+        >
+          <div class="search-box">
+            <li class="icon search"></li>
+            <input type="search" placeholder="Search apple.com" />
+          </div>
+          <hr />
+          <ul class="links_mobile_nav">
+            <li class="" style="--item-index: 0">Store</li>
+            <hr />
+            <li class="" style="--item-index: 1">Mac</li>
+            <hr />
+            <li class="" style="--item-index: 2">iPad</li>
+            <hr />
+            <li class="" style="--item-index: 3">iPhone</li>
+            <hr />
+            <li class="" style="--item-index: 4">Watch</li>
+            <hr />
+            <li class="" style="--item-index: 5">AirPods</li>
+            <hr />
+            <li class="" style="--item-index: 6">TV & Home</li>
+            <hr />
+            <li class="" style="--item-index: 7">Only on Apple</li>
+            <hr />
+            <li class="" style="--item-index: 8">Accessories</li>
+            <hr />
+            <li class="" style="--item-index: 9">Support</li>
+            <hr />
+          </ul>
+        </div>
       </nav>
     </header>
     <section class="notify-banner">
